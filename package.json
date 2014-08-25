@@ -1,6 +1,6 @@
 {
   "name": "PaloIT",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Palo IT Mobile App",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:Palo-IT/paloit-mobile.git"
+    "url": "git@github.com:seanchenxi/front.git"
   },
   "keywords": [
     "Palo",
@@ -18,9 +18,9 @@
   "author": "Xi CHEN <chenxifr@gmail.com>",
   "license": "Apache License, Version 2.0",
   "bugs": {
-    "url": "https://github.com/Palo-IT/paloit-mobile/issues"
+    "url": "https://github.com/seanchenxi/front/issues"
   },
-  "homepage": "https://github.com/Palo-IT/paloit-mobile",
+  "homepage": "https://github.com/seanchenxi/front",
   "devDependencies": {
     "bower": "^1.3.9",
     "grunt": "^0.4.5",
