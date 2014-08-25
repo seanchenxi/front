@@ -2,9 +2,8 @@ module.exports = function (grunt) {
 
     // globs where our JS files are found - used below in uglify and watch
     var jsFilePaths = [
-        'js/*.js',
-        'js/app/*.js',
-        'js/app/modules/*.js'
+        'scripts/*.js',
+        'scripts/js/*.js'
     ];
 
     // Project configuration
@@ -185,7 +184,11 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-requirejs');
+    grunt.loadNpmTasks('grunt-contrib-compress');
+    grunt.loadNpmTasks('grunt-string-replace');
+    grunt.loadNpmTasks('grunt-phonegap-build');
     grunt.loadNpmTasks('grunt-bump');
+    grunt.loadNpmTasks('grunt-exec');
 //    grunt.loadNpmTasks('grunt-contrib-compass');
 //    grunt.loadNpmTasks('grunt-contrib-watch');
 
@@ -195,5 +198,5 @@ module.exports = function (grunt) {
 
     // register a "production" task that sets everything up before deployment
 //    grunt.registerTask('production', ['jshint', 'requirejs', 'uglify', 'compass:dist']);
-    grunt.registerTask('production', ['jshint', 'requirejs', 'uglify']);
+    grunt.registerTask('prod', ['jshint', 'requirejs', 'uglify']);
 };

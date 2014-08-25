@@ -23,3 +23,9 @@ grunt production
 
 https://github.com/vojtajina/grunt-bump
 
+## info
+grunt-contrib-compress for the zipping
+grunt-string-replace for replacing strings and placeholders in various files
+grunt-phonegap-build for interacting with the Phone Gap Build API
+grunt-exec for executing command line commands (For BlackBerry)
+
