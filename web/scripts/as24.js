@@ -5,5 +5,5 @@ define([
 
     return {
         name : 'as24'
-    }
+    };
 });
