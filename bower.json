@@ -1,0 +1,37 @@
+{
+    "name": "PaloIT",
+    "version": "0.0.1",
+    "description": "Palo IT Mobile App",
+    "authors": [
+        "Xi CHEN <chenxifr@gmail.com>"
+    ],
+    "license": "Apache License, Version 2.0",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "web/assets/vendor",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "angular": "1.2.22",
+        "angular-route": "1.2.22",
+        "angular-animate": "1.2.22",
+        "angular-resource": "1.2.22",
+        "angular-touch": "1.2.22",
+        "angular-sanitize": "1.2.22",
+        "angular-bootstrap": "0.11.0",
+        "angular-swipe": "0.0.6",
+        "ionicons": "1.5.2",
+        "font-awesome": "4.1.0",
+        "bootstrap": "3.2.0",
+        "jquery": "2.1.0",
+        "jquery-i18n-properties": "1.1.0",
+        "jquery-touchswipe": "1.6.6",
+        "requirejs": "2.1.14",
+        "requirejs-plugins": "1.0.2",
+        "highcharts": "4.0.3"
+    }
+}
