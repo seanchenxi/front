@@ -114,6 +114,21 @@ module.exports = function (grunt) {
                 '<%= appDir %>/scripts/{,*/}*.js'
             ]
         },
+        bump: { //Bump package version, create tag, commit, push ...
+            options: {
+                files: ['package.json'],
+                updateConfigs: [],
+                commit: true,
+                commitMessage: 'Release v%VERSION%',
+                commitFiles: ['package.json'],
+                createTag: true,
+                tagName: 'v%VERSION%',
+                tagMessage: 'Version %VERSION%',
+                push: true,
+                pushTo: 'upstream',
+                gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d'
+            }
+        }
 
         // use compass to compile everything in the "sass" directory into "css"
 //        compass: {
@@ -170,6 +185,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-requirejs');
+    grunt.loadNpmTasks('grunt-bump');
 //    grunt.loadNpmTasks('grunt-contrib-compass');
 //    grunt.loadNpmTasks('grunt-contrib-watch');
 

@@ -21,3 +21,5 @@ grunt -h
 
 grunt production
 
+https://github.com/vojtajina/grunt-bump
+
